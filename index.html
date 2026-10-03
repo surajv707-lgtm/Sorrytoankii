@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#120d1c" />
+  <title>For Ankii ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="background">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="stars"></div>
+  </div>
+
+  <!-- Floating particles -->
+  <div id="particles"></div>
+
+  <!-- Progress -->
+  <div class="progress-wrap">
+    <div class="progress-info">
+      <span id="stageLabel">Stage 1 of 4</span>
+      <span id="progressPercent">25%</span>
+    </div>
+
+    <div class="progress-bar">
+      <div id="progressFill"></div>
+    </div>
+  </div>
+
+
+  <!-- =========================
+       STAGE 1
+  ========================== -->
+
+  <main class="stage active" id="stage1">
+
+    <div class="glass-card intro-card">
+
+      <div class="tiny-label">A little something for you</div>
+
+      <h1>
+        Hey <span>Ankii</span> ❤️
+      </h1>
+
+      <p class="subtitle">
+        Before you read anything...
+        I have a tiny challenge for you.
+      </p>
+
+      <div class="heart-area">
+        <button class="big-heart" id="heartButton">
+          <span>♥</span>
+        </button>
+
+        <div class="heart-ring ring1"></div>
+        <div class="heart-ring ring2"></div>
+      </div>
+
+      <p class="hint">
+        Tap the heart to continue
+      </p>
+
+      <div class="secret-message" id="secretMessage">
+        <p>
+          Okay... you found it. 👀
+        </p>
+
+        <p>
+          Now let's take this one step at a time.
+        </p>
+
+        <button class="primary-btn" id="stage1Next">
+          I'm listening →
+        </button>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       STAGE 2
+  ========================== -->
+
+  <main class="stage" id="stage2">
+
+    <div class="glass-card game-card">
+
+      <div class="tiny-label">Stage 2 • Mini Game</div>
+
+      <h2>
+        Find the <span>3 hearts</span> ❤️
+      </h2>
+
+      <p class="game-description">
+        There are three hidden hearts somewhere below.
+        Find all three to unlock the next part.
+      </p>
+
+      <div class="heart-game" id="heartGame">
+
+        <button class="game-box" data-heart="true">?</button>
+        <button class="game-box">?</button>
+        <button class="game-box">?</button>
+        <button class="game-box">?</button>
+        <button class="game-box" data-heart="true">?</button>
+        <button class="game-box">?</button>
+        <button class="game-box">?</button>
+        <button class="game-box" data-heart="true">?</button>
+        <button class="game-box">?</button>
+
+      </div>
+
+      <div class="game-score">
+        Hearts found:
+        <strong id="heartScore">0 / 3</strong>
+      </div>
+
+      <div id="gameMessage" class="game-message"></div>
+
+      <button class="primary-btn disabled" id="stage2Next">
+        Unlock next stage 🔒
+      </button>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       STAGE 3
+  ========================== -->
+
+  <main class="stage" id="stage3">
+
+    <div class="glass-card letter-card">
+
+      <div class="tiny-label">Stage 3 • Something I wanted to say</div>
+
+      <div class="letter-top">
+        <div class="letter-icon">💌</div>
+      </div>
+
+      <h2>
+        A small apology...
+      </h2>
+
+      <div class="letter-content" id="letterContent">
+
+        <p>
+          Ankii,
+        </p>
+
+        <p>
+          I know a simple “sorry” can never completely explain
+          what I actually want to say.
+        </p>
+
+        <p>
+          If I ever said something wrong, behaved weirdly,
+          annoyed you, or made you feel bad in any way...
+          <strong>I'm genuinely sorry.</strong>
+        </p>
+
+        <p>
+          I don't want to make excuses.
+          I just wanted you to know that hurting you
+          was never my intention.
+        </p>
+
+        <p>
+          Some people become important without even realizing
+          when it happened.
+        </p>
+
+        <p class="special-line">
+          And somehow, you became one of those people for me. ❤️
+        </p>
+
+      </div>
+
+      <button class="primary-btn" id="stage3Next">
+        There's one more thing... →
+      </button>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       STAGE 4
+  ========================== -->
+
+  <main class="stage" id="stage4">
+
+    <div class="final-container">
+
+      <div class="tiny-label">Final Stage • Open when you're ready</div>
+
+      <h2 class="final-title">
+        One last little surprise
+      </h2>
+
+      <!-- Envelope -->
+      <div class="envelope-wrapper" id="envelopeWrapper">
+
+        <div class="envelope">
+
+          <div class="envelope-back"></div>
+
+          <div class="letter-inside">
+            <div class="mini-letter">
+              <span>For Ankii ❤️</span>
+            </div>
+          </div>
+
+          <div class="envelope-front"></div>
+
+          <div class="envelope-flap"></div>
+
+          <div class="seal">
+            ♥
+          </div>
+
+        </div>
+
+      </div>
+
+      <p class="envelope-hint">
+        Tap the envelope
+      </p>
+
+
+      <!-- Final letter -->
+      <div class="final-letter" id="finalLetter">
+
+        <div class="final-heart">
+          ❤️
+        </div>
+
+        <h2>
+          Dear Ankii,
+        </h2>
+
+        <p>
+          There are some people you meet and forget.
+        </p>
+
+        <p>
+          And then there are people who somehow become
+          a little more special than everyone else.
+        </p>
+
+        <p>
+          You are one of those people.
+        </p>
+
+        <p>
+          I may not always know the perfect thing to say.
+          I may mess up sometimes.
+          I may annoy you more than I should. 😭
+        </p>
+
+        <p>
+          But one thing I hope you always know is this:
+        </p>
+
+        <div class="highlight-message">
+          You are genuinely special to me.
+        </div>
+
+        <p>
+          So if I ever made you upset,
+          I'm really, really sorry.
+        </p>
+
+        <p>
+          I don't expect anything from you.
+          I just wanted to make you smile
+          and remind you that you matter. ❤️
+        </p>
+
+        <div class="signature">
+          — Someone who really doesn't want to lose your smile.
+        </div>
+
+        <div class="final-actions">
+
+          <button class="primary-btn" id="restartBtn">
+            Read it again ↻
+          </button>
+
+          <button class="soft-btn" id="confettiBtn">
+            One more smile ✨
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- Music toggle -->
+  <button class="music-btn" id="musicBtn">
+    ♫
+  </button>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
